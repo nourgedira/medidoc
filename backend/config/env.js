@@ -5,4 +5,5 @@ export const env = {
   jwtSecret: process.env.JWT_SECRET ?? "",
   clientUrl: process.env.CLIENT_URL ?? "http://localhost:5173",
   databaseUrl: process.env.DATABASE_URL ?? "",
+  jwtExpiresIn: process.env.JWT_EXPIRES_IN ?? "1d",
 };
