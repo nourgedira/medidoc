@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: medidoc-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: medidoc
+      POSTGRES_PASSWORD: medidoc_password
+      POSTGRES_DB: medidoc_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - medidoc_pgdata:/var/lib/postgresql/data
+
+volumes:
+  medidoc_pgdata:
