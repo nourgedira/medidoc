@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS utilisateurs (
   email VARCHAR(150) UNIQUE NOT NULL,
   mot_de_passe VARCHAR(255) NOT NULL,
   role VARCHAR(20) NOT NULL DEFAULT 'utilisateur'
-    CHECK (role IN ('utilisateur', 'admin')),
+    CHECK (role IN ('USER', 'admin')),
   cree_le TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
