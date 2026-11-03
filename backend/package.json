@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "node --watch server.js",
     "start": "node server.js",
-    "db:init": "node sql/initDb.js"
-  },
+    "db:init": "node sql/initDb.js",
+"test": "node --test"  },
   "keywords": [],
   "author": "",
   "license": "ISC",
